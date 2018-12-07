@@ -75,18 +75,7 @@ public static void interpret(String line) {
 		STEntry e = new STEntry();
 		e.name = name ;
 		e.length= 4  ;  
-		//String v = "0";
-//		for(int j = 0 ; j<line.length() ; j++) {
 
-//			if(Character.isDigit(line.charAt(j))) {
-//				
-//				Integer k = new Integer("k");
-//				e.value = k.intValue();
-//			}
-//			
-//			st.db.addElement(e);
-//			
-//		}
 		e.value = loc ; st.add(e);
 		loc += 4; 
 	}
@@ -118,35 +107,7 @@ public static void interpret(String line) {
 		 loc +=4 ; 
 		 
 	}
-//	if(line.startsWith("\t") && (line.contains("="))) {
-//		// it is a literal 
-//		line.trim();
-//		int i = getIndex(0,'=',line) ; 		
-//		String name = line.substring(0, i);
-//		
-//		Instruction s = new Instruction();
-//		s.name = name ; s.b = base ; s.i = 0 ; 
-//		
-//		if(Character.isDigit(line.charAt(i+1))) { 
-//			
-//			s.reg =line.charAt(i+1);
-//		}
-//		// have to search the code in symbol table in pass 2 
-//		String code = line.substring(i+3);
-//		s.code = code ;  s.id = loc ; 
-//		objectCode.addElement(s);
-//		LiteralTableEntry e = new LiteralTableEntry();
-//		e.name= code ; 
-//		int j = getIndex(0,(char)96,line);
-//		Integer g = new Integer(line.substring(j+1)) ;  
-//		lt.db.addElement(e);
-//		 loc +=4 ; 
-//		
-//		
-//		
-//		
-//		
-//	}
+
 	
 			
 	
